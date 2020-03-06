@@ -1,0 +1,174 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+input::placeholder{
+color: #f0d8d9;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.container {
+	max-width: 940px;
+    width: 100%;
+	margin: 0 auto;
+}
+
+.quote{
+    background-color: #f06c64;
+}
+
+.quote__title{
+    padding-top: 67px;
+    padding-bottom: 29px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.quote__suptitle{
+    padding-bottom: 48px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.quote__info{
+    display: flex; 
+}
+
+.quote__input{
+    width: 65.851%;
+    margin-right: 20px;
+}
+
+.quote__input-name,
+.quote__input-email,
+.quote__input-subject,
+.quote__input-description{
+    padding-left: 15px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-align: left;
+    width: 619px;
+    border-radius: 5px;
+    border: none;
+}
+
+.quote__input-name,
+.quote__input-email,
+.quote__input-subject{
+    height: 38px; 
+    margin-bottom: 16px;
+
+    justify-content: center;
+}
+
+.quote__input-description{
+    height: 202px;
+ 
+    margin-bottom: 20px;
+}
+
+.quote__input-submit{
+    width: 20%;
+    color: #f0d8d9;
+    border-color:firebrick;
+    border-radius: 5px;
+    margin-bottom: 27px;
+}
+
+.quote__input-submit:hover{
+    cursor: pointer;
+    background-color: dodgerblue;
+    
+}
+
+input{
+    background-color: #d6564f;
+}
+
+.quote__contact-title{
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    padding-bottom: 18px;
+}
+
+.quote__contact-suptitle{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 32px;
+}
+
+.quote__contact-item{
+    display: flex;
+}
+
+.quote__contact-picture{
+    padding-right: 10px;
+}
+
+.quote__contact-text{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.quote__under{
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.footer{
+        background-color: #2d303a;
+}
+
+.footer__el{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__social-picture{
+    padding-right: 8px;
+}
+
+.last{
+    padding-right: 0;
+}
+
+.footer__social,
+.footer__copy:hover{
+    cursor: pointer;
+}
+
+
+
+
+
