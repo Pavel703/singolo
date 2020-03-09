@@ -1,1 +1,1 @@
-https://pavel703.github.io/
+https://pavel703.github.io/singolo/
