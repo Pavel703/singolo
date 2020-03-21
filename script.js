@@ -1,26 +1,26 @@
 // slider 
-const ELEM = document.getElementById('left-cursor');
-const ELEM2 = document.getElementById('right-cursor');
-const SLIDER = document.getElementById('slider');
+const SLIDER = document.getElementById('left-cursor');
+const SLIDER2 = document.getElementById('right-cursor');
+const SLIDE = document.getElementById('slider');
 
-ELEM.onclick = ELEM2.onclick = function(){
-    SLIDER.classList[1] === 'opacity0' ? SLIDER.classList.remove('opacity0') : SLIDER.classList.add('opacity0');
+SLIDER.onclick = SLIDER.onclick = function(){
+    SLIDE.classList[1] === 'opacity0' ? SLIDE.classList.remove('opacity0') : SLIDE.classList.add('opacity0');
     
 };
 
 
 //change screens 
-const Iclick1 = document.getElementById('black-button');
-const Iclick2 = document.getElementById('black-button-2');
-const Screen1 = document.getElementById('screen-black1');
-const Screen2 = document.getElementById('screen-black2');
+const BLACK_BUTTON1 = document.getElementById('black-button');
+const BLACK_BUTTON2 = document.getElementById('black-button-2');
+const BLACK_SCREEN_1 = document.getElementById('screen-black1');
+const BLACK_SCREEN_2 = document.getElementById('screen-black2');
 
-Iclick1.onclick = function(){
-    Screen1.classList[1] === 'opacity0' ? Screen1.classList.remove('opacity0'): Screen1.classList.add('opacity0');
+BLACK_BUTTON1.onclick = function(){
+    BLACK_SCREEN_1.classList[1] === 'opacity0' ? BLACK_SCREEN_1.classList.remove('opacity0'): BLACK_SCREEN_1.classList.add('opacity0');
 }
 
-Iclick2.onclick = function(){
-    Screen2.classList[1] === 'opacity0' ? Screen2.classList.remove('opacity0'): Screen2.classList.add('opacity0');
+BLACK_BUTTON2.onclick = function(){
+    BLACK_SCREEN_2.classList[1] === 'opacity0' ? BLACK_SCREEN_2.classList.remove('opacity0'): BLACK_SCREEN_2.classList.add('opacity0');
 }
 
 
@@ -96,8 +96,8 @@ FORM.addEventListener('submit', (event) => {
   let formSubject =  document.querySelector('.quote__input-subject');
   let formDetail =  document.querySelector('.quote__input-description');
 
-  let pop_up_subject_area = document.querySelector('.pop_up_subject');
-  let pop_up_text_area = document.querySelector('.pop_up_text');
+  let pop_up_subject_area = document.querySelector('.output__message_subject');
+  let pop_up_text_area = document.querySelector('.output__message_text');
 
   if (formSubject.value == '') {
     pop_up_subject_area.innerHTML = 'Без темы';
@@ -110,12 +110,12 @@ FORM.addEventListener('submit', (event) => {
   } else {
     pop_up_text_area.innerHTML = 'Описание: ' + formDetail.value;
   }
-  document.querySelector('.pop_up_msg').style.display = 'block';
+  document.querySelector('.output__message').style.display = 'block';
 }); 
 
-function pop_up_ok_btn() {
+function output__message_ok_btn() {
   document.getElementById('form').reset();
-  document.querySelector('.pop_up_msg').style.display = 'none';
+  document.querySelector('.output__message').style.display = 'none';
 }
 
 
