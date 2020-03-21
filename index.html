@@ -5,19 +5,21 @@
     <link rel="stylesheet" href="singolo.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
     <title>Singolo</title>
+
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="link-home">
             <div class="container">
                 <div class="header__inner">
                  <h1 class="header__logo-white">SINGOLO<span class="header__logo-red">*</span></h1>
-               <nav class="nav">
-                   <a href="#" class="nav__link active">Home</a>
-                   <a href="#" class="nav__link">Services</a>
-                   <a href="#" class="nav__link">Portfolio</a>
-                   <a href="#" class="nav__link">About</a>
-                   <a href="#" class="nav__link">Contact</a>    
+               <nav class="nav" id="nav">
+                   <a href="#link-home" class="nav__link active">Home</a>
+                   <a href="#link-services" class="nav__link">Services</a>
+                   <a href="#link-portfolio" class="nav__link">Portfolio</a>
+                   <a href="#link-about-us" class="nav__link">About</a>
+                   <a href="#link-contact" class="nav__link">Contact</a>    
                </nav>
                </div>
             </div>
@@ -26,28 +28,56 @@
                   
     <div class="slider">
         <div class="container">
-           <div class="slider__inner">
-            <a href="#" class="btn left">
-                <img src="assets/chev.png" alt="#">
+          
+          <div class="slider__inner2 opacity0" id='slider'>
+		  	<div class="slider__inner green-slide">
+          		<img src="assets/iPhone_Vertical%20(1).png" class="left__mobile-green" alt="vertical phone">
+          		          		<img src="assets/phone-green.png" class="mobile-green" alt="green phone">
+          		<img src="assets/iPhone_Vertical%20(1).png" class="right__mobile-green" alt="vertical phone">	
+		 </div>	
+          </div>
+         
+          
+           <div class="slider_container_bg">
+           
+           <div class="screen__container" id='screen__black'>
+              <div class='black-button' id='black-button'></div>
+               <div class="screen__black-1 opacity0" id='screen-black1'></div>
+               <div class="black-button-2 " id='black-button-2'></div>
+           	   <div class="screen__black-2 opacity0" id='screen-black2'></div>
+           </div>
+           
+           <div class="slider__inner js-corousel">
+            <a href="#" class="btn left" >
+                <img src="assets/chev.png" id='left-cursor' alt="#">
             </a>
-            <div class="phone__left">
-                <img src="assets/iPhone_Vertical%20(1).png" alt="Phone">
-            </div>
-            <div class="phone__right">
-                <img src="assets/iPhone_Horizontal.png" alt="#">
-            </div>
+                 <div class="sliders__container">
+                  <div class="slides">
+                    <div class="phone__left">
+                        <img src="assets/iPhone_Vertical%20(1).png" id='mobile__black1' alt="Phone">
+                    </div>
+                    
+                    <div class="phone__right">
+                        <img src="assets/iPhone_Horizontal.png" id='mobile__black2'alt="#">
+                    </div>
+                   </div>                   
+                
+               </div> 
             
-            <a href="#" class="btn right">
-                <img src="assets/chev.png" alt="#">
+            <a href="#" class="btn right" >
+                <img src="assets/chev.png" id='right-cursor' alt="#">
             </a>
         </div>
+			</div>
         </div>
     </div>  
+       
+
     <div class="slider__bottom"></div> 
 
    
    
-    <section class="services">
+    <section class="services" id="link-services">
         <div class="container">
             <div class="service__title">Our Services</div>  
             <div class="service__suptitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div> 
@@ -119,54 +149,54 @@
     <div class="services__bottom"></div> 
     
     
-    <div class="portfolio ">
+    <div class="portfolio" id="link-portfolio">
 		<div class="container portfolio__container">
 			<div class="portfolio__content">
 				<div class="portfolio__title">Portfolio</div>
 				<p class="portfolio__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 				<div class="portfolio__nav">
-					<span class="portfolio__nav-el portfolio__nav-el_active">All</span>
-					<span class="portfolio__nav-el">Web Design</span>
-					<span class="portfolio__nav-el">Graphic Design</span>
-					<span class="portfolio__nav-el">Artwork</span>
+					<span class="portfolio__nav-el portfolio__nav-el_active" id="gallery-all">All</span>
+					<span class="portfolio__nav-el" id="web-design">Web Design</span>
+					<span class="portfolio__nav-el" id="graphic-design">Graphic Design</span>
+					<span class="portfolio__nav-el" id="artwork">Artwork</span>
 				</div>
 
-				<div class="portfolio__works">
-					<div class="works__wrapper">
-						<div class="portfolio__item">
+				<div class="portfolio__works" id="portfolio__works">
+					<div class="works__wrapper" id="works__wrapper">
+						<div class="portfolio__item artwork">
 							<img src="assets/Project@1X%20(2).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item artwork">
 							<img src="assets/Project@1X%20(1).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item artwork">
 							<img src="assets/Layer%209@1X.png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item web-design">
 							<img src="assets/Project@1X%20(3).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item artwork">
 							<img src="assets/Project@1X%20(4).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item web-design">
 							<img src="assets/Project@1X%20(5).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item artwork">
 							<img src="assets/Layer%2011@1X.png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item graphic-design">
 							<img src="assets/Layer%208@1X%20(1).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item graphic-design">
 							<img src="assets/Project@1X%20(9).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item artwork">
 							<img src="assets/Project@1X%20(8).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item graphic-design">
 							<img src="assets/Project@1X%20(7).png" alt="" class="work">
 						</div>
-						<div class="portfolio__item">
+						<div class="portfolio__item graphic-design">
 							<img src="assets/Project@1X%20(6).png" alt="" class="work">
 						</div>
 						
@@ -178,7 +208,7 @@
 	</div>
 		<div class="portfolio__border"></div>
 
-	<div class="about-us ">
+	<div class="about-us" id="link-about-us">
 		<div class="container portfolio__container">
 			<div class="about-us__content">
 				<div class="section__title">About Us</div>
@@ -228,21 +258,21 @@
             <div class="quote__title">Get a Quote</div>
             <div class="quote__suptitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
             <div class="quote__info">
-                <form class="quote__input">
+                <form class="quote__input" id="form">
                   
-                        <input type="text" placeholder="Name(Required)" class="quote__input-name">
+                        <input type="text" placeholder="Name(Required)" class="quote__input-name" name='name'>
  
                   
-                        <input type="email" placeholder="Email(Required)" class="quote__input-email">
+                        <input type="email" placeholder="Email(Required)" class="quote__input-email" name="email">
 
                     
-                        <input type="text" placeholder="Subject" class="quote__input-subject">
+                        <input type="text" placeholder="Subject" class="quote__input-subject" name='subject'>
                     
                     
-                        <input type="text" placeholder="Describe your project in detail..." class="quote__input-description">
+					<textarea name="detail" placeholder="Describe your project in detail..." class="quote__input-description"></textarea>
                       
                     
-                        <input type="submit" value="Submit" class="quote__input-submit">    
+                        <input type="submit" value="send" class="quote__input-submit" id="quote__input-submit" >    
                      
                 </form>
                 
@@ -271,11 +301,19 @@
                 </div>
             </div>
         </div>
+        <div class='output__message' id='output__message'>
+      <div class='window__output__message'>
+        <p class='output__message_header'>Письмо отправлено</p> 
+        <p class='output__message_subject'></p> 
+        <p class='output__message_text'></p> 
+        <button class='output__message_button' onclick='output__message_ok_btn()'>OK</button> 
+      </div>
+    </div>
     </div>
     
     <div class="quote__under"></div> 
        
-    <div class="footer">
+    <div class="footer" id="link-contact">
        <div class="container">
           <div class="footer__inner">
              <div class="footer__el">
@@ -291,6 +329,8 @@
              </div>
           </div>
        </div>
-    </div>    
+    </div>  
+            <script src="script.js">
+</script>  
 </body>
 </html>
