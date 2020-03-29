@@ -119,6 +119,41 @@ function output__message_ok_btn() {
 }
 
 
+// menu -375
+
+const BURGER = document.getElementById('burger');
+const MOBILE_MENU = document.getElementById('burger__menu');
+const MOBILE_LINKS = document.getElementById('burger__nav');
+const LOGO = document.getElementById('logo');
+
+let burger = BURGER.onclick = function(){
+    if(BURGER.classList[1] === 'active-burger'){
+        BURGER.classList.remove('active-burger');
+        MOBILE_MENU.classList.add('active-menu');
+        MOBILE_LINKS.classList.add('burger__slide-active');
+    }else{
+        BURGER.classList.add('active-burger');
+        MOBILE_MENU.classList.remove('active-menu');
+        MOBILE_LINKS.classList.remove('burger__slide-active');
+    }
+}
+
+
+MOBILE_MENU.onclick = function(e){
+    if (event.target.className != 'burger__slide' ) {
+        burger();
+    }else{
+        MOBILE_LINKS.addEventListener('click',(event)=>{
+            if (event.target.classList[0] != "burger__slide"){
+                burger();
+                MOBILE_LINKS.querySelectorAll('.nav-link').forEach(el=>el.classList.remove('active'));
+                event.target.classList.add('active');
+            }
+        })
+        
+    };
+};
+
 
 
 
