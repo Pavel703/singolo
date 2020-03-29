@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="singolo.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singolo_resp.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 
@@ -10,9 +11,22 @@
 
 </head>
 <body>
+   
+   <div class="burger__menu active__menu" id="burger__menu">
+       <div class="burger__slide burger__slide-active" id="burger__nav">
+           <a href="#link-home" class="nav__link active">Home</a>
+                   <a href="#link-services" class="nav__link">Services</a>
+                   <a href="#link-portfolio" class="nav__link">Portfolio</a>
+                   <a href="#link-about-us" class="nav__link">About</a>
+                   <a href="#link-contact" class="nav__link">Contact</a>      
+       </div>
+   </div>
+   
     <header class="header" id="link-home">
             <div class="container">
+               
                 <div class="header__inner">
+                                <button id="burger" class="burger__button"></button>
                  <h1 class="header__logo-white">SINGOLO<span class="header__logo-red">*</span></h1>
                <nav class="nav" id="nav">
                    <a href="#link-home" class="nav__link active">Home</a>
@@ -54,7 +68,7 @@
                  <div class="sliders__container">
                   <div class="slides">
                     <div class="phone__left">
-                        <img src="assets/iPhone_Vertical%20(1).png" id='mobile__black1' alt="Phone">
+                        <img src="assets/iPhone_Vertical%20(1).png" id='mobile__black1'  alt="Phone">
                     </div>
                     
                     <div class="phone__right">
